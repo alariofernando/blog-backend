@@ -3,3 +3,4 @@ __pycache__**
 .vscode
 package-lock.json
 node_modules
+.serverless

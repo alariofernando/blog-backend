@@ -1,0 +1,17 @@
+  
+language: python
+
+python:
+  - 3.8
+
+services:
+  - docker
+
+cache:
+  directories:
+    - node_modules
+script: 
+    - nvm install v12.18.0
+    - npm install -g serverless
+    - npm install
+    - sls deploy
